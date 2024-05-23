@@ -1,0 +1,23 @@
+.cards {
+  margin-top: 2.2rem;
+}
+.cards .parent_cards  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.cards .parent_cards img {
+  width: 140px;
+  text-align: center;
+}
+@media (max-width:850px) {
+  .cards .parent_cards  {
+    flex-wrap: wrap; 
+    text-align: center;
+    justify-content: center; 
+  }
+  .cards .parent_cards img {
+    width: 120px;
+  }
+}
