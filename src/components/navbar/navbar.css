@@ -120,7 +120,7 @@ nav .container {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.10) 100%);
   z-index: -1;
 }
 
@@ -167,8 +167,8 @@ nav .container {
 }
 @media (max-width:500px) {
   .header h1 {
-    /* font-size: 27px; */
-    font-size: 30px;
+    font-size: 27px;
+    /* font-size: 30px; */
     line-height: 46.90px;
   }
   .header .our {
