@@ -32,10 +32,6 @@ html{
 ul{
   list-style: none;
 }
-button {
-  cursor: pointer;
-}
-
 
 .container {
   padding-left: 15px;

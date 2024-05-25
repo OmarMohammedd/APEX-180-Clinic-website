@@ -4,7 +4,7 @@
     margin-top: 4rem;
     left: 0;
     top: 0;
-    background-image: url('../../assets/div-1.png');
+    background-image: url('../../assets/3ac0b22d10f18b120d543a819ae971be.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,6 +62,7 @@
   font-weight: 400;
   letter-spacing: 0.29px;
   margin: 0.7rem 0;
+  font-weight: 800;
 }
 .first_Transformations_right {
   display: flex;
@@ -114,10 +115,9 @@
 }
 .first_Transformations_right.dddd {
   background: linear-gradient(0deg, #65BDC2 0%, #65BDC2 100%);
-  margin-top: 4rem;
+  margin-top: 3rem;
   background-image: url("../../assets/9d5ac6fef06219fbba9aff66eab1593b.jpeg");
   padding: 2rem;
-  position: relative;
 }
 @media (max-width:1200px) {
   .Transformations .container {
@@ -125,10 +125,80 @@
   }
 }
 @media (max-width:992px) {
+  .Transformations {
+    height: auto;
+    padding: 3rem 0;
+}
+  .Transformations .container {
+    flex-direction: column;
+    gap: 2.8rem;
+  }
   .Transformations_left {
-    display: none;
+    width: 400px;
+    height: 400px;
+  }
+  .Transformations_left img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   .first_Transformations_right div .frinst {
     width: 100%;
   }
+  .first_Transformations_right.dddd p.frinst {
+    width: 97%;
+  }
+}
+@media (max-width:666px)  {
+  .Transformations_left {
+    width: 300px;
+  }
+  .Transformations .container {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .Transformations_right {
+    margin-top: -2rem;
+  }
+  .first_Transformations_right.dddd p.frinst {
+    width: 100%;
+ }
+ .first_Transformations_right {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  padding: 1.5rem 0.8rem;
+}
+
+.first_Transformations_right img {
+ margin-right: 0rem;
+}
+.first_Transformations_right div h4 {
+  margin-top: 1rem;
+}
+.first_Transformations_right div .frinst {
+  margin-top: 0rem;
+}
+.first_Transformations_right div .seconde {
+  margin-top: 1rem;
+}
+.first_Transformations_right div button {
+  margin-top: 1rem;
+}
+.first_Transformations_right div button.transparce {
+  background-color: #0E3055;
+}
+.first_Transformations_right.dddd {
+  padding: 1.5rem 0.8rem;
+  text-align: center;
+}
+.Transformations_right h3 {
+  font-size: 30px;
+}
 }

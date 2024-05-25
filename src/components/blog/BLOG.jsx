@@ -7,7 +7,7 @@ import img4 from "../../assets/div-3.png";
 
 function BLOG() {
   return (
-    <div className="blog">
+    <div className="blog" id="Blog">
       <div className="container">
         <button>THE BLOG</button>
         <h2>Check Our News</h2>

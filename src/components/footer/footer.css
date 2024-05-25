@@ -1,22 +1,35 @@
-.footer .container {
+.footer .containerr {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 4rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  border-top: 1px solid #CEB186;
 }
-.footer .container div {
+.footer .containerr div {
   display: flex;
   gap: 0.7rem;
+  align-items: center;
 }
+.logo {
+  margin-bottom: 1.4rem;
+}
+
 .footer .container a ,
+.footer .container .FiPhone,
 .footer .container span {
-  color: #CEB186;
+  color: rgba(182, 135, 77, 1);
 }
+
+.pragraph {
+  text-align: center;
+  padding: 1.6rem 0;
+  border-top: 1px solid #CEB186;
+}
+
+
 @media (max-width:992px) {
-  .footer .container {
+  .footer .containerr {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -24,5 +37,8 @@
     justify-content: space-between;
     margin-top: 4rem;
     padding-bottom: 2.4rem;
+  }
+  .logo {
+    margin-bottom: 0rem;
   }
 }

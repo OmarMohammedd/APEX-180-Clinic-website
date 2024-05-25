@@ -1,38 +1,61 @@
-import React from "react";
+import React,{useState} from "react";
 import "./navbar.css";
-import logo from "../../assets/logo.png";
-import { TiLocationOutline } from "react-icons/ti";
-import { FiPhone } from "react-icons/fi";
+import logo from "../../assets/log00o.png";
 
 
 function Navbar() {
+
+  const [state, setstate] = useState(false)
+const clicke = () => {
+  setstate(!state)
+}
+
+
   return (
+    
   <header>
-      <div className="navbar">
-      <div className="container">
+     <nav>
+     <div className="container">
+        <a href="./">
         <div className="image">
           <img src={logo} alt="" className="responsive-logo"/>
         </div>
+        </a>
 
-        <div className="center_navbar">
-          <TiLocationOutline className="TiLocationOutline"/>
-          <p>
-            35 Al-Hejaz, located from Lebanon Street, <br /> in front of Saudi
-            Mohandiseen
-          </p>
+        <div>
+          <ul id="navbar" className={state ? "#navbar active" : "#navbar"}>
+            <li>
+              <a className="active" href="#About">
+               About
+              </a>
+            </li>
+            <li>
+              <a href="#Transformation">Transformation</a>
+            </li>
+            <li>
+              <a href="#OurTiming">Our Timing</a>
+            </li>
+            <li>
+              <a href="#Blog">Blog </a>
+            </li>
+          </ul>
         </div>
 
-        <div className="left_navbar">
-          <FiPhone className="FiPhone"/>
-          <p>CALL US :01126668255</p>
+        <div id="moblie" onClick={clicke}>
+          <i id="bar"
+            className={state ? "fas fa-times" : "fas fa-bars"}
+          ></i>
         </div>
       </div>
-    </div>
+      </nav>
+  
+    
 
     
       <div className="header">
+        <div className="overrr"></div>
       <div className="container">
-      <h1>Experience the Difference</h1>
+      <h1 className="Experience">Experience the Difference</h1>
       <h1 className="our">In Our Dental care</h1>
       </div>
     </div>

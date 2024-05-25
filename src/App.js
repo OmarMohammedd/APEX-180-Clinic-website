@@ -5,6 +5,7 @@ import Transformations from "./components/Transformations/Transformations.jsx"
 import Cards from "./components/Cards/Cards.jsx"
 import Blog from "./components/blog/BLOG.jsx"
 import Footer from "./components/footer/Footer.jsx"
+import OurTiming from "./components/OurTiming/OurTiming.jsx"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <About/>
         <Transformations/>
         <Cards/>
+        <OurTiming/>
         <Blog/>
         <Footer/>
     </div>

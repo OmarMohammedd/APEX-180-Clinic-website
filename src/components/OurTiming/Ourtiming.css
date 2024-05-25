@@ -1,0 +1,155 @@
+.ourtiming {
+  width: 100%;
+  margin-top: 4rem;
+  left: 0;
+  top: 0;
+  background-image: url("../../assets/149eb33c5932d5935a153b8fcb43e763.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+}
+.ourtiming .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 48, 83, 0.91) 0%,
+    rgba(23, 48, 83, 0.25) 100%
+  );
+  z-index: -1;
+}
+.ourtiming h1 {
+  color: white;
+  font-size: 35px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.29px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.ourtiming .table {
+  text-align: center;
+  background: rgba(28, 86, 110, 0.66);
+  z-index: 10;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  flex-direction: column;
+  border-radius: 9px;
+}
+.ourtiming .table div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  gap: 8rem;
+}
+.ourtiming .table div p {
+  color: white;
+  font-size: 17px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1.17px;
+}
+.ourtiming .table div button {
+    white-space: nowrap;
+  outline: none;
+  border: none;
+  padding: 0.4rem 0.9rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.17);
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.17px;
+  border-radius: 6px;
+}
+.ourtiming .call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #65BDC2;
+  color: white;
+  margin-top: 2rem;
+  gap: 20rem;
+  border-radius: 9px;
+  padding: 1rem;
+}
+.ourtiming .call p {
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.ourtiming .call span {
+  text-align: center;
+  color: white;
+  font-size: 21px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  padding: 1.4rem 0;
+  cursor: pointer;
+}
+.ourtiming .call a {
+  text-decoration: none;
+}
+@media (max-width:700px) {
+  .ourtiming .call {
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 0rem;
+    padding: 0.8rem;
+  }
+  .ourtiming .call p {
+    font-size: 17px;
+  }
+  .ourtiming .call span {
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+@media (max-width:360px) {
+  .ourtiming .call {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .ourtiming .table {
+    width: 100%; 
+  }
+  .ourtiming .table div {
+    width: 100%;
+    max-width: none;
+    gap: 1rem;
+  }
+}
+@media (max-width: 412px) {
+  .ourtiming .table div {
+    max-width: none;
+    width: 100% !important; 
+    gap: 0rem;
+    flex-wrap: wrap; 
+  }
+  .ourtiming .table div p,
+  .ourtiming .table div button {
+    width: 100%; 
+    margin-bottom: 1rem; 
+  }
+}

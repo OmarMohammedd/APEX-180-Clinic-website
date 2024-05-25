@@ -13,7 +13,7 @@ import img_card_4 from "../../assets/pls-06.jpg.png";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="About">
       <div className="container">
 
         <div className="aboutt">
