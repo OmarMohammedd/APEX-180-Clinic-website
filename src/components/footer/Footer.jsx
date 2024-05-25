@@ -17,7 +17,11 @@ function Footer() {
         </div>
           <div>
             <i className="fa-solid fa-phone FiPhone"></i>
-            <p>CALL US :01126668255</p>
+            
+            <p>CALL US:
+            <a href="tel:+201126668255">
+               01126668255
+               </a></p>
           </div>
       </div>
 
