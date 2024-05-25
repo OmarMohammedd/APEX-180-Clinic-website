@@ -41,7 +41,7 @@ const clicke = () => {
           </ul>
         </div>
 
-        <div id="moblie" onClick={clicke} style={{marginTop:"1rem"}}>
+        <div id="moblie" onClick={clicke} style={{marginTop:"0.7rem"}}>
           <i id="bar" 
             // className={state ? "fas fa-times" : "fas fa-bars"}
             className={state ? "icon-times" : "icon-bars"}
