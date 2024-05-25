@@ -9,14 +9,14 @@ function Footer() {
       <div className="containerr">
           <img src={img} alt="" className="responsive-logo logo" />
         <div>
-        <i className="fa-solid fa-location-dot FiPhone"></i>
+        <i className="icon-map-marker FiPhone"></i>
             <p>
               35 Al-Hejaz, located from Lebanon Street, in front of Saudi
               Mohandiseen
             </p>
         </div>
           <div>
-            <i className="fa-solid fa-phone FiPhone"></i>
+            <i className="icon-phone FiPhone"></i>
             
             <p>CALL US:
             <a href="tel:+201126668255">

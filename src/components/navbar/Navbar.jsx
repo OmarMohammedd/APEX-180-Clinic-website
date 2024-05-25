@@ -43,7 +43,8 @@ const clicke = () => {
 
         <div id="moblie" onClick={clicke}>
           <i id="bar"
-            className={state ? "fas fa-times" : "fas fa-bars"}
+            // className={state ? "fas fa-times" : "fas fa-bars"}
+            className={state ? "icon-times" : "icon-bars"}
           ></i>
         </div>
       </div>
