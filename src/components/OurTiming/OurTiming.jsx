@@ -69,7 +69,7 @@ function OurTiming() {
           </div>
           <div className="card">
             <img src={img_card_3} alt="" />
-            <h4>تجميبل</h4>
+            <h4>تجميل</h4>
           </div>
           <div className="card">
             <img src={img_card_4} alt="" />
