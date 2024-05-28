@@ -62,22 +62,19 @@ function OurTiming() {
           <div className="card">
             <img src={img_card_1} alt="" />
             <h4>طب اسنان الاطفال</h4>
-            <p>From 1299 $</p>
           </div>
           <div className="card">
             <img src={img_card_2} alt="" />
             <h4>زراعة الاسنان</h4>
-            <p>From 350 $</p>
           </div>
           <div className="card">
             <img src={img_card_3} alt="" />
             <h4>تجميبل</h4>
-            <p>From 2000 $</p>
           </div>
           <div className="card">
             <img src={img_card_4} alt="" />
             <h4>تركيبات</h4>
-            <p>From 150 $</p>
+
           </div>
         </div>
     </div>

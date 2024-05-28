@@ -25,7 +25,7 @@ function Transformations() {
                          <p className='frinst'>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit quisque.</p>
                       </div>
                       <div>
-                        <p className='seconde'>$ 1200</p>
+                        {/* <p className='seconde'>$ 1200</p> */}
                         <button>NEW</button>
                       </div>
                    </div>
@@ -37,7 +37,7 @@ function Transformations() {
                          <p className='frinst'>Vivamus non lacus vel tellus molestie dictum. Morbi malesuada nibh vel.</p>
                       </div>
                       <div>
-                        <p className='seconde'>$ 1999</p>
+                        {/* <p className='seconde'>$ 1999</p> */}
                         <button className='transparce'>NEW</button>
                       </div>
                    </div>
@@ -49,7 +49,7 @@ function Transformations() {
                          <p className='frinst'>Curabitur scelerisque odio elementu maauris varius dictum maecenas facil.</p>
                       </div>
                       <div>
-                        <p className='seconde'>$ 99</p>
+                        {/* <p className='seconde'>$ 99</p> */}
                         <button className='transparce'>NEW</button>
                       </div>
                    </div>
