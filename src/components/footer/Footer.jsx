@@ -6,19 +6,18 @@ function Footer() {
   return (
     <div className="footer">
       <div className="container">
-      <div className="containerr">
+      <div className="containerr" dir="rtl">
           <img src={img} alt="" className="responsive-logo logo" />
         <div>
         <i className="icon-map-marker FiPhone"></i>
             <p>
-              35 Al-Hejaz, located from Lebanon Street, in front of Saudi
-              Mohandiseen
+              ٣٥ الحجاز متفر من شارع لبنان امام سعودي المهندسين
             </p>
         </div>
           <div>
             <i className="icon-phone FiPhone"></i>
             
-            <p>CALL US:
+            <p>
             <a href="tel:+201126668255">
                01126668255
                </a></p>

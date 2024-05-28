@@ -21,7 +21,7 @@ function Transformations() {
                    <div className='first_Transformations_right'>
                       <img src={img2} alt="" />
                       <div>
-                         <h4>Cosmetic dentistry</h4>
+                         <h4>تجميل الاسنان</h4>
                          <p className='frinst'>Lorem ipsum dolor sit amet, cons ectetur adipiscing elit quisque.</p>
                       </div>
                       <div>
@@ -33,7 +33,7 @@ function Transformations() {
                    <div className='first_Transformations_right'>
                       <img src={img3} alt="" />
                       <div>
-                         <h4>Nerve stuffing</h4>
+                         <h4>حشو العصب</h4>
                          <p className='frinst'>Vivamus non lacus vel tellus molestie dictum. Morbi malesuada nibh vel.</p>
                       </div>
                       <div>
@@ -45,7 +45,7 @@ function Transformations() {
                    <div className='first_Transformations_right dddd'>
                       <img src={img4} alt="" />
                       <div>
-                         <h4>tooth implant</h4>
+                         <h4>زراعة الاسنان</h4>
                          <p className='frinst'>Curabitur scelerisque odio elementu maauris varius dictum maecenas facil.</p>
                       </div>
                       <div>

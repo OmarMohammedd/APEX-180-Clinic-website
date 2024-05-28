@@ -1,6 +1,20 @@
+.ourtimingg h1 {
+  margin-top: 4rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.29px;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 37px;
+  font-weight: 700;
+}
+@media (max-width:666px)  {
+  .ourtimingg h1 {
+    font-size: 30px;
+  }
+}
 .ourtiming {
   width: 100%;
-  margin-top: 4rem;
   left: 0;
   top: 0;
   background-image: url("../../assets/149eb33c5932d5935a153b8fcb43e763.jpeg");
@@ -26,21 +40,6 @@
     rgba(23, 48, 83, 0.25) 100%
   );
   z-index: -1;
-}
-.ourtiming h1 {
-  color: white;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.29px;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 37px;
-  font-weight: 800;
-}
-@media (max-width:666px)  {
-  .ourtiming h1 {
-    font-size: 30px;
-  }
 }
 .ourtiming .table {
   text-align: center;
@@ -84,17 +83,36 @@
   letter-spacing: 1.17px;
   border-radius: 6px;
 }
+
 .ourtiming .call {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20rem;
+}
+.ourtiming .calll {
   background-color: #65BDC2;
   color: white;
-  margin-top: 2rem;
-  gap: 20rem;
-  border-radius: 9px;
+  border-radius: 9px;  
   padding: 1rem;
+  margin-top: 2rem;
 }
+.ourtiming .calll .location {
+  text-align: center;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0.7rem;
+}
+@media (max-width:700px) {
+  .ourtiming .calll .location {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 0.4rem;
+  }
+}
+
 .ourtiming .call p {
   color: white;
   font-family: 'DM Sans', sans-serif;
@@ -116,7 +134,7 @@
 @media (max-width:700px) {
   .ourtiming .call {
     justify-content: space-between;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     gap: 0rem;
     padding: 0.8rem;
   }

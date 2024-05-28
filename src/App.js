@@ -12,10 +12,10 @@ function App() {
   return (
     <div>
         <Navbar/>
+        <OurTiming/>
         <About/>
         <Transformations/>
         <Cards/>
-        <OurTiming/>
         <Blog/>
         <Footer/>
     </div>

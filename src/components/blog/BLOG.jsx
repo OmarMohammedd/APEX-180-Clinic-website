@@ -10,19 +10,16 @@ function BLOG() {
     <div className="blog" id="Blog">
       <div className="container">
         <button>THE BLOG</button>
-        <h2>Check Our News</h2>
+        <h2>تحقق من أخبارنا</h2>
         <div className="parent_carddd">
           <div className="cardd active">
             <div className="image">
               <img src={img1} alt="" />
             </div>
-          <div className="cosmetic">
-              <h3>cosmetic fillings</h3>
+          <div className="cosmetic" dir="rtl">
+              <h3>الحشوات التجميليه</h3>
               <p>
-                Cosmetic fillings, also known as composite fillings or
-                tooth-colored fillings, are a tooth-colored alternative to
-                traditional amalgam fillings. They are made of a composite plastic
-                resin, and they look just like natural teeth.
+              الحشوات التجميلية ، والمعروفة أيضا باسم الحشوات المركبة أو الحشوات الملونة بالأسنان ، هي بديل بلون الأسنان لحشوات الملغم التقليدية. إنها مصنوعة من راتنج بلاستيكي مركب ، وتبدو تماما مثل الأسنان الطبيعية.
               </p>
           </div>
           </div>
@@ -30,10 +27,10 @@ function BLOG() {
             <div className="image">
               <img src={img2} alt="" />
             </div>
-          <div className="cosmetic">
-              <h3>Dental implants</h3>
+          <div className="cosmetic" dir="rtl">
+              <h3>زراعة الاسنان </h3>
               <p>
-              A dental implant is a prosthesis that interfaces with the bone of the jaw or skull to support a dental prosthesis such as a crown, bridge, denture, ...
+              زراعة الأسنان هي طرف اصطناعي يتفاعل مع عظم الفك أو الجمجمة لدعم بدلة الأسنان مثل التاج والجسر وطقم الأسنان ...
             
               </p>
           </div>
@@ -42,22 +39,20 @@ function BLOG() {
             <div className="image">
               <img src={img3} alt="" />
             </div>
-          <div className="cosmetic">
-              <h3>Latest Event</h3>
+          <div className="cosmetic" dir="rtl">
+              <h3>آخر الأحداث</h3>
               <p>
-              There are several types of oral surgery procedures performed each year. Some of the most common include tooth extraction, dental bone grafts, dental implants, periodontal surgery, corrective jaw surgery, sleep apnea surgery and cleft lip and palate repair
-              </p>
+              هناك عدة أنواع من إجراءات جراحة الفم التي يتم إجراؤها كل عام. بعض من أكثرها شيوعا تشمل قلع الأسنان ، ترقيع عظام الأسنان ، زراعة الأسنان ، جراحة اللثة ، جراحة الفك التصحيحية ، جراحة توقف التنفس أثناء النوم وإصلاح الشفة المشقوقة والحنك المشقوق              </p>
           </div>
           </div>
           <div className="cardd">
             <div className="image">
               <img src={img4} alt="" />
             </div>
-          <div className="cosmetic">
-              <h3>New Website</h3>
+          <div className="cosmetic" dir="rtl">
+              <h3>موقع جديد</h3>
               <p>
-              Phasellus enim librobland vel sapien vitae, condime ntum ul tricies magnaetq uisque eu ismod orci.
-              </p>
+              يوفر معلومات حول الخدمات والأسعار وساعات العمل.   يسهل على المرضى حجز المواعيد              </p>
           </div>
           </div>
         </div>

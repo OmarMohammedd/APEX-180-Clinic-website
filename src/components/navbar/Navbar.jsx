@@ -30,10 +30,10 @@ const clicke = () => {
               </a>
             </li>
             <li>
-              <a href="#Transformation">Transformation</a>
+              <a href="#OurTiming">Our Timing</a>
             </li>
             <li>
-              <a href="#OurTiming">Our Timing</a>
+              <a href="#Transformation">Transformation</a>
             </li>
             <li>
               <a href="#Blog">Blog </a>
@@ -50,7 +50,6 @@ const clicke = () => {
       </div>
       </nav>
   
-    
 
     
       <div className="header">
