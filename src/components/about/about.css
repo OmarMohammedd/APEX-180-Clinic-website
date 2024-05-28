@@ -162,7 +162,7 @@
   }
   .parent_card {
     grid-template-columns: 1fr 1fr;
-    row-gap: 1rem;
+    row-gap: 2rem;
   }
   /* .parent_card img {
     width: 300px;
@@ -193,7 +193,7 @@
   }
   .parent_card {
     grid-template-columns: 1fr;
-    row-gap: 0.4rem;
+    row-gap: 2.4rem;
   }
   .parent_card p {
     margin-top: -0.3rem;
