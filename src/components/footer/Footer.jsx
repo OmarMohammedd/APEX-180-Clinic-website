@@ -11,7 +11,7 @@ function Footer() {
         <div>
         <i className="icon-map-marker FiPhone"></i>
             <p>
-              ٣٥ الحجاز متفر من شارع لبنان امام سعودي المهندسين
+              ٣٥ الحجاز متفرع من شارع لبنان امام سعودي المهندسين
             </p>
         </div>
           <div>

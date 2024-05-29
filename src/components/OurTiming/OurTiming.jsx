@@ -42,7 +42,7 @@ function OurTiming() {
         </div>
         <div className="calll">
 
-          <p className="location">٣٥ الحجاز متفر من شارع لبنان امام سعودي المهندسين</p>
+          <p className="location">٣٥ الحجاز متفرع من شارع لبنان امام سعودي المهندسين</p>
           
           <div className="call">
               <p>Call us</p>
