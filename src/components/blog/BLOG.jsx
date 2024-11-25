@@ -10,7 +10,7 @@ function BLOG() {
     <div className="blog" id="Blog">
       <div className="container">
         <button>THE BLOG</button>
-        <h2>تحقق من أخبارنا</h2>
+        <h2 style={{color:'white'}}>تحقق من أخبارنا</h2>
         <div className="parent_carddd">
           <div className="cardd active">
             <div className="image">

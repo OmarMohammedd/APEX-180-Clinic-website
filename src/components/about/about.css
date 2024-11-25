@@ -55,7 +55,7 @@
   background: linear-gradient(90deg, #65bdc2 0%, #0e3055 100%);
 }
 .about_right h2 {
-  color: #2e2e2e;
+  color: white !important;
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
   letter-spacing: 0.29px;
@@ -63,7 +63,7 @@
   margin: 0.7rem 0;
 }
 .about_right p {
-  color: #5c5c5c;
+  color: #fff;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 0.8px;
   font-weight: normal;

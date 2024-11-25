@@ -15,7 +15,7 @@
 
 nav {
   width: 100%;
-  background: rgba(255, 255, 255, 1);
+  background: #222;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   padding: 5px 0;
   height: 80px;
@@ -50,7 +50,7 @@ nav .container {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 600;
-  color: rgba(182, 135, 77, 1);
+  color: #bb9659;
   transition: 0.3s ease-in-out;
 }
 

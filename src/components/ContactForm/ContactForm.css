@@ -1,0 +1,139 @@
+.contact-section {
+  padding: 40px 0;
+}
+
+.contact-section .container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: right;
+  direction: rtl;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  border: 1px solid #374151;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-size: 16px;
+}
+
+.form-input:focus {
+  border-color: #C8A45D;
+  box-shadow: 0 0 0 2px rgba(200, 164, 93, 0.2);
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.error-message {
+  color: #EF4444;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 16px 32px;
+  background-color: #C8A45D;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  margin-top: 16px;
+}
+
+.submit-button:hover {
+  background-color: #B89451;
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Add focus styles for accessibility */
+.form-input:focus,
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(200, 164, 93, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  
+  .contact-form {
+    padding: 24px;
+  }
+  
+  .form-input {
+    padding: 14px;
+  }
+  
+  .submit-button {
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .form-input {
+    padding: 12px;
+  }
+  
+  .submit-button {
+    padding: 12px 24px;
+  }
+}

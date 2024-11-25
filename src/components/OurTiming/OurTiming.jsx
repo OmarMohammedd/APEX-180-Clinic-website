@@ -61,19 +61,19 @@ function OurTiming() {
     <div className="parent_card">
           <div className="card">
             <img src={img_card_1} alt="" />
-            <h4>طب اسنان الاطفال</h4>
+            <h4 style={{color:'white'}}>طب اسنان الاطفال</h4>
           </div>
           <div className="card">
             <img src={img_card_2} alt="" />
-            <h4>زراعة الاسنان</h4>
+            <h4 style={{color:'white'}}>زراعة الاسنان</h4>
           </div>
           <div className="card">
             <img src={img_card_3} alt="" />
-            <h4>تجميل</h4>
+            <h4 style={{color:'white'}}>تجميل</h4>
           </div>
           <div className="card">
             <img src={img_card_4} alt="" />
-            <h4>تركيبات</h4>
+            <h4 style={{color:'white'}}>تركيبات</h4>
 
           </div>
         </div>
