@@ -36,6 +36,9 @@ const clicke = () => {
               <a href="#Transformation">Transformation</a>
             </li>
             <li>
+              <a href="#Contact">Contact </a>
+            </li>
+            <li>
               <a href="#Blog">Blog </a>
             </li>
           </ul>
