@@ -1,9 +1,11 @@
 import "./app.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navbar from "./components/navbar/Navbar.jsx"
 import About from "./components/about/About.jsx"
 import Transformations from "./components/Transformations/Transformations.jsx"
 import Cards from "./components/Cards/Cards.jsx"
 import Blog from "./components/blog/BLOG.jsx"
+import BlogDetails from "./components/blog/BlogDetails.jsx"
 import Footer from "./components/footer/Footer.jsx"
 import OurTiming from "./components/OurTiming/OurTiming.jsx"
 import Modal from "./components/modal/Modal.jsx"
@@ -47,17 +49,26 @@ function App() {
   };
 
   return (
-    <div>
-      <Navbar/>
-      <OurTiming/>
-      <About/>
-      <Transformations/>
-      <Cards/>
-      <ContactForm/>
-      <Blog/>
-      <Footer/>
-      <Modal isOpen={open} onClose={handleClose} />
-    </div>
+    <Router>
+      <div>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <OurTiming/>
+              <About/>
+              <Transformations/>
+              <Cards/>
+              <ContactForm/>
+              <Blog/>
+            </>
+          } />
+          <Route path="/blog/:id" element={<BlogDetails />} />
+        </Routes>
+        <Footer/>
+        <Modal isOpen={open} onClose={handleClose} />
+      </div>
+    </Router>
   );
 }
 

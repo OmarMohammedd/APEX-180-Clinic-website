@@ -1,5 +1,6 @@
 // Modal.jsx
 import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import './Modal.css';
 
 const Modal = ({ isOpen, onClose }) => {
@@ -11,6 +12,7 @@ const Modal = ({ isOpen, onClose }) => {
 
   const [errors, setErrors] = useState({});
   const [isClosing, setIsClosing] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const validateForm = () => {
     const newErrors = {};
@@ -48,17 +50,39 @@ const Modal = ({ isOpen, onClose }) => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log(formData);
-      // Reset form
-      setFormData({
-        fullName: '',
-        phone: '',
-        message: ''
-      });
-      handleClose();
+      setIsSending(true);
+      try {
+        const templateParams = {
+          to_name: "Dr. Noura Radwan",
+          from_name: formData.fullName,
+          phone_number: formData.phone,
+          message: formData.message,
+        };
+
+        await emailjs.send(
+          'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+          'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+          templateParams,
+          'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        );
+
+        // Reset form
+        setFormData({
+          fullName: '',
+          phone: '',
+          message: ''
+        });
+        handleClose();
+        alert('تم إرسال رسالتك بنجاح!'); // Success message in Arabic
+      } catch (error) {
+        console.error('Error sending email:', error);
+        alert('حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.'); // Error message in Arabic
+      } finally {
+        setIsSending(false);
+      }
     }
   };
 
@@ -76,6 +100,11 @@ const Modal = ({ isOpen, onClose }) => {
       setIsClosing(false);
     }
   }, [isOpen]);
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+  }, []);
 
   return (
     <>
@@ -106,6 +135,7 @@ const Modal = ({ isOpen, onClose }) => {
               onChange={handleChange}
               placeholder="الاسم بالكامل"
               className="form-input"
+              disabled={isSending}
             />
             {errors.fullName && (
               <div className="error-message">{errors.fullName}</div>
@@ -114,12 +144,13 @@ const Modal = ({ isOpen, onClose }) => {
 
           <div className="form-group">
             <input
-              type="tel"
+              type="text"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
               placeholder="رقم الهاتف"
               className="form-input"
+              disabled={isSending}
             />
             {errors.phone && (
               <div className="error-message">{errors.phone}</div>
@@ -134,6 +165,7 @@ const Modal = ({ isOpen, onClose }) => {
               placeholder="الرسالة"
               rows="4"
               className="form-input"
+              disabled={isSending}
             />
             {errors.message && (
               <div className="error-message">{errors.message}</div>
@@ -143,8 +175,9 @@ const Modal = ({ isOpen, onClose }) => {
           <button
             type="submit"
             className="submit-button"
+            disabled={isSending}
           >
-            ارسال
+            {isSending ? 'جاري الإرسال...' : 'ارسال'}
           </button>
         </form>
       </div>
