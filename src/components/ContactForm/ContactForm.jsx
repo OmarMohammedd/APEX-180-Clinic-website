@@ -62,8 +62,8 @@ const ContactForm = () => {
   return (
     <section className="contact-section" id="Contact">
       <div className="container">
-        <h2 className="section-title"> ........
-          حجز موعد مع د/  
+        <h2 className="section-title"> 
+          حجز موعد مع د/  احمد مفتاح
         </h2>
 
         <form onSubmit={handleSubmit} className="contact-form">

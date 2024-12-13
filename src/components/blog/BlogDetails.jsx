@@ -1,15 +1,15 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './blog.css';
-import img1 from "../../assets/div.png";
-import img2 from "../../assets/div-2.png";
-import img3 from "../../assets/div-11.png";
-import img4 from "../../assets/div-3.png";
-import img5 from "../../assets/Component 21.png";
-import img6 from "../../assets/pls-01.jpg.png";
-import img7 from "../../assets/pls-02.jpg.png";
-import img8 from "../../assets/pls-05.jpg.png";
-import img9 from "../../assets/pls-06.jpg.png";
+import img1 from "../../assets/blog-1.jpg"
+import img2 from "../../assets/blog-2.jpg";
+import img3 from "../../assets/blog-3.jpg"
+import img4 from "../../assets/blog-4.jpg"
+import img5 from "../../assets/blog-5.jpg"
+import img6 from "../../assets/blog-6.jpg";
+import img7 from "../../assets/blog-7.jpg"
+import img8 from "../../assets/blog-8.jpg"
+import img9 from "../../assets/blog-9.jpg"
 
 const BlogDetails = () => {
   const { id } = useParams();

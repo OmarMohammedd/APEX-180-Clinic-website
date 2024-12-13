@@ -185,3 +185,11 @@
   font-weight: bold;
   margin-left: 5px;
 }
+
+@media (max-width: 768px) {
+  
+.parent_carddd {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+  
+}

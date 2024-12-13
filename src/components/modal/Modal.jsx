@@ -56,17 +56,17 @@ const Modal = ({ isOpen, onClose }) => {
       setIsSending(true);
       try {
         const templateParams = {
-          to_name: "Dr. Noura Radwan",
-          from_name: formData.fullName,
-          phone_number: formData.phone,
+          to_name: "Dr. Ahmed Moftah", 
+          fullname: formData.fullName, 
+          phone: formData.phone, 
           message: formData.message,
         };
 
         await emailjs.send(
-          'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-          'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+          'service_td5krzo',
+          'template_4ogonnh',
           templateParams,
-          'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+          'RggaTFJdVCKuqsSWu'
         );
 
         // Reset form
@@ -103,7 +103,7 @@ const Modal = ({ isOpen, onClose }) => {
 
   // Initialize EmailJS
   useEffect(() => {
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+    emailjs.init("RggaTFJdVCKuqsSWu");
   }, []);
 
   return (
@@ -123,7 +123,7 @@ const Modal = ({ isOpen, onClose }) => {
         </button>
 
         <h2 className="modal-title">
-          حجز موعد مع د/ نورا رضوان
+          حجز موعد مع د/ احمد مفتاح
         </h2>
 
         <form onSubmit={handleSubmit} className="modal-form">

@@ -1,0 +1,223 @@
+/* DentalCard.css */
+.card-container {
+  padding-top: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+.content-container {
+  padding: 24px;
+  text-align: center;
+  background-color: #2e2e2e;
+  direction: rtl;
+}
+
+.doctor-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tooth-icon {
+  font-size: 24px;
+}
+
+.content-container h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.certificates {
+  margin: 24px 0;
+}
+
+.certificates p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* New styles for doctor credentials */
+.doctor-credential {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  transition: all 0.3s ease;
+  border-right: 4px solid #4a90e2;
+}
+
+.doctor-credential:hover {
+  transform: translateX(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.doctor-credential.primary {
+  border-right-color: #595c5e
+}
+
+.doctor-credential.secondary {
+  border-right-color: #595c5e
+}
+
+.doctor-credential.tertiary {
+  border-right-color: #595c5e
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.social-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+
+.social-button:hover {
+  color: #cccccc;
+}
+
+/* Responsive design for larger screens */
+@media screen and (min-width: 1024px) {
+  .card-container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    align-items: stretch;
+    padding-top: 80px;
+  }
+
+  .image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .image-container img {
+    height: 100%;
+  }
+
+  .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .content-container h2 {
+    font-size: 32px;
+  }
+
+  .certificates p {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .social-icons {
+    margin-top: 32px;
+  }
+
+  .doctor-credential {
+    font-size: 20px;
+    padding: 25px;
+  }
+}
+
+/* Medium screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card-container {
+    max-width: 700px;
+  }
+
+  .content-container {
+    padding: 32px;
+  }
+
+  .content-container h2 {
+    font-size: 28px;
+  }
+
+  .certificates p {
+    font-size: 19px;
+  }
+
+  .doctor-credential {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 767px) {
+  .card-container {
+    max-width: 100%;
+    margin: 0 15px;
+  }
+
+  .image-container img {
+    height: 400px ;
+  }
+
+  .content-container {
+    padding: 20px;
+  }
+
+  .content-container h2 {
+    font-size: 22px;
+  }
+
+  .certificates p {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    gap: 16px;
+  }
+
+  .doctor-name {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .tooth-icon {
+    font-size: 20px;
+  }
+
+  .doctor-credential {
+    font-size: 16px;
+    padding: 15px;
+    margin: 10px auto;
+  }
+}
