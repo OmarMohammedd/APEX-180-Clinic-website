@@ -4,7 +4,7 @@ import img from "../../assets/log00o.png";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" style={{background:'#ccc'}}>
       <div className="container">
       <div className="containerr" dir="rtl">
           <img src={img} alt="" className="responsive-logo logo" />

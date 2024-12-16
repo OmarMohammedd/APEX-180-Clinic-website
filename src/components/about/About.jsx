@@ -1,9 +1,9 @@
 import React from "react";
 import "./about.css";
-import img_1 from "../../assets/pls-011.jpg.png";
+import img_1 from "../../assets/doctor-back.jpeg";
 import img_2 from "../../assets/9c61052a0d746431fd27de5185f410fc.png";
 import img_3 from "../../assets/a6c7eb7bd18d00c4508f82ffaa65a7cf.jpeg";
-import img_4 from "../../assets/d02322209d1977ffd22af10504ef5c7e.jpeg";
+import img_4 from "../../assets/avatar.png";
 import img_5 from "../../assets/5514a264bf807900084f602aa8cf5011.png";
 
 
@@ -15,9 +15,6 @@ function About() {
           <div className="about_left">
             <div className="img_1">
               <img src={img_1} alt="" />
-            </div>
-            <div className="img_2">
-              <img className="im_2" src={img_2} alt="" />
             </div>
           </div>
           <div className="about_right">

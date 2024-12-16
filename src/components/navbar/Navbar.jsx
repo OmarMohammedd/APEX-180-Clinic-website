@@ -48,7 +48,6 @@ const clicke = () => {
 
         <div id="moblie" onClick={clicke} style={{marginTop:"0.7rem"}}>
           <i id="bar" 
-          style={{color:'white', }}
             // className={state ? "fas fa-times" : "fas fa-bars"}
             className={state ? "icon-times" : "icon-bars"}
           ></i>
