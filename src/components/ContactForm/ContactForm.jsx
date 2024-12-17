@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import './ContactForm.css';
 
 const ContactForm = () => {
@@ -9,6 +10,7 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSending, setIsSending] = useState(false);
 
   const validateForm = () => {
     const newErrors = {};
@@ -46,18 +48,45 @@ const ContactForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log(formData);
-      // Reset form
-      setFormData({
-        fullName: '',
-        phone: '',
-        message: ''
-      });
+      setIsSending(true);
+      try {
+        const templateParams = {
+          to_name: "Dr. Ahmed Moftah", 
+          fullname: formData.fullName, 
+          phone: formData.phone, 
+          message: formData.message,
+        };
+
+        await emailjs.send(
+          'service_37ormrp',
+          'template_bohxfrd',
+          templateParams,
+          'paDexhalxpZ7dDwpo'
+        );
+
+        // Reset form
+        setFormData({
+          fullName: '',
+          phone: '',
+          message: ''
+        });
+        alert('تم إرسال رسالتك بنجاح!'); // Success message in Arabic
+      } catch (error) {
+        console.error('Error sending email:', error);
+        alert('حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.'); // Error message in Arabic
+      } finally {
+        setIsSending(false);
+      }
     }
   };
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init("paDexhalxpZ7dDwpo");
+  }, []);
 
   return (
     <section className="contact-section" id="Contact">
@@ -75,6 +104,7 @@ const ContactForm = () => {
               onChange={handleChange}
               placeholder="الاسم بالكامل"
               className="form-input"
+              disabled={isSending}
             />
             {errors.fullName && (
               <div className="error-message">{errors.fullName}</div>
@@ -89,6 +119,7 @@ const ContactForm = () => {
               onChange={handleChange}
               placeholder="رقم الهاتف"
               className="form-input"
+              disabled={isSending}
             />
             {errors.phone && (
               <div className="error-message">{errors.phone}</div>
@@ -103,6 +134,7 @@ const ContactForm = () => {
               placeholder="الرسالة"
               rows="4"
               className="form-input"
+              disabled={isSending}
             />
             {errors.message && (
               <div className="error-message">{errors.message}</div>
@@ -112,8 +144,9 @@ const ContactForm = () => {
           <button
             type="submit"
             className="submit-button"
+            disabled={isSending}
           >
-            ارسال
+            {isSending ? 'جاري الإرسال...' : 'ارسال'}
           </button>
         </form>
       </div>

@@ -63,10 +63,10 @@ const Modal = ({ isOpen, onClose }) => {
         };
 
         await emailjs.send(
-          'service_td5krzo',
-          'template_4ogonnh',
+          'service_37ormrp',
+          'template_bohxfrd',
           templateParams,
-          'RggaTFJdVCKuqsSWu'
+          'paDexhalxpZ7dDwpo'
         );
 
         // Reset form
@@ -103,7 +103,7 @@ const Modal = ({ isOpen, onClose }) => {
 
   // Initialize EmailJS
   useEffect(() => {
-    emailjs.init("RggaTFJdVCKuqsSWu");
+    emailjs.init("paDexhalxpZ7dDwpo");
   }, []);
 
   return (
